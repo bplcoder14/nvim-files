@@ -13,7 +13,6 @@ return {
         "lua_ls",
         "ts_ls",
         "glint",
-        "djlsp",
       },
     })
     end,
@@ -25,7 +24,6 @@ return {
       -- nvim-lspconfig setup lsp servers
       lspconfig.lua_ls.setup({})
       lspconfig.ts_ls.setup({})
-      lspconfig.djlsp.setup({})
       lspconfig.glint.setup({})
       -- nvim-lspconfig Keymaps
       vim.keymap.set('n', 'gd', vim.lsp.buf.definition, {})
